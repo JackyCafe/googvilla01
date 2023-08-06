@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+	子項目
+{% endblock %}
+{% block head %}
+
+{% endblock %}
+{% block content %}
+	{% for item in detailitems %}
+     <a href="#"  class="btn btn-success" >{{ item }}</a>
+    {% endfor %}
+{% endblock %}

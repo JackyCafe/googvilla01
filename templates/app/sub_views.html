@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+	子項目
+{% endblock %}
+{% block head %}
+
+{% endblock %}
+{% block content %}
+	{% for item in subitems %}
+       <a class="btn btn-success" href="{% url 'app:detail_view' item.id%}">{{ item }}</a>
+    {% endfor %}
+{% endblock %}

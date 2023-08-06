@@ -1,0 +1,96 @@
+
+body {
+  background-color: #ffffff;
+  font-family: Helvetica;
+}
+#cav{
+    border: 2px solid black;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px black;
+    -webkit-box-shadow: 0px 0px 10px black;
+    -moz-box-shadow: 0px 0px 10px black;
+}
+
+.vertical_left{
+    width: 100px;
+    height: 600px;
+    position: absolute;
+    top:100px;
+    left:0px;
+
+}
+.vertical_right{
+    width: 100px;
+    height: 600px;
+    position: absolute;
+    top:100px;
+    left:600px;
+
+}
+
+
+
+.horizontal_up{
+    position:absolute ;
+    top:100px;
+    left: 100px;
+    text-align: center;
+    height: 100px;
+}
+.horizontal_down{
+    position:absolute ;
+    top:700px;
+    left: 100px;
+    text-align: center;
+    height: 100px;
+}
+.horizontal_box{
+    float: left;
+    top:100px;
+    left:100px;
+    text-align: center;
+    border: 0.5px solid blue;
+    height: 100px;
+    width: 100px;
+}
+
+
+.in_job{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background: #008b8b; /* Old browsers */
+    background-image: linear-gradient(to top left, #87f6f6, #ffffff);
+    border: 0.5px solid blue;
+    border-radius: 10px;
+}
+.empty{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background:#ffffff;
+    border: 0.5px solid blue;
+    border-radius: 10px;
+}
+.info{
+    font-size: 24px;
+    font-family: Helvetica;
+
+    background: #f8dfc4;
+    position: absolute;
+    top:222px;
+    left: 122px;
+    height: 460px;
+    width: 460px;
+    border-radius: 20px;
+
+
+}
+#myDialog{
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    border: 2px solid #00ff48;
+    box-shadow: 0 2px 6px #ccc;
+    border-radius: 10px;
+}

@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{%  block title %}
+    工時大富翁
+{% endblock %}
+{% block head %}
+    <script>
+        $(document).ready(function (){
+            const myDialog = $('#myDialog');
+            const closeDialog = $('#closeDialog');
+
+            $('.empty').click(function(){
+
+               let id = $(this).attr('id')
+                $(this).click(function(){
+                    $(this).addClass('in_job');
+
+                })
+                myDialog.show();
+            })
+            closeDialog.click(function (){
+                myDialog.hide()
+            })
+
+
+        })
+
+    </script>
+{% endblock %}
+{% block content %}
+    <div class="horizontal_down">
+        <div class="horizontal_box empty" >24</div>
+        <div class="horizontal_box empty" >23</div>
+        <div class="horizontal_box empty" >22</div>
+        <div class="horizontal_box empty" >21</div>
+        <div class="horizontal_box empty" >20</div>
+        <div class="horizontal_box empty" >19</div>
+    </div>
+    <div class="vertical_right">
+        <div class="empty" >13</div>
+        <div class="empty" >14</div>
+        <div class="empty" >15</div>
+        <div class="empty" >16</div>
+        <div class="empty" >17</div>
+        <div class="empty">18</div>
+
+    </div>
+
+    <div class="horizontal_up">
+
+    <div class="horizontal_box in_job" >8</div>
+    <div class="horizontal_box in_job" >9</div>
+    <div class="horizontal_box in_job" >10</div>
+    <div class="horizontal_box empty" >11</div>
+    <div class="horizontal_box empty" >12</div>
+    </div>
+    <div class="vertical_left">
+        <div class="empty in_job" >7</div>
+    <div class="empty" >6</div>
+    <div class="empty" >5</div>
+    <div class="empty" >4</div>
+    <div class="empty" id="3">3</div>
+    <div class="empty" id="2">2</div>
+    <div class="empty" id="1">1</div>
+    </div>
+
+    <div class="info">
+        <div>   林彥亨 目前工作 3.5 hr</div>
+        <div>食</div>
+        <div>衣</div>
+        <div>住: 3.2hr 服務 9 人次 金額 1200 元</div>
+        <div>行</div>
+        <div>育</div>
+        <div>樂 </div>
+    </div>
+
+    <dialog id="myDialog" >
+    <p>選擇分類</p>
+
+
+
+        <div class="container">
+              <div class="row">
+                {% for item in major %}
+                <div class="card">
+                    <a class="btn btn-success" href = "{% url 'app:sub_view' item.id %}">{{item }}</a></div>
+
+                {% endfor %}
+
+
+
+
+            </div>
+        </div>
+        <button id="closeDialog">關閉</button>
+        </div>
+  </dialog>
+
+
+{% endblock %}
