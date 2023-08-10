@@ -7,6 +7,6 @@
 {% endblock %}
 {% block content %}
 	{% for item in detailitems %}
-     <a href="#"  class="btn btn-success" >{{ item }}</a>
+     <a href="{% url 'app:create_work_record' item.id %}"  class="btn btn-success" >{{ item }}</a>
     {% endfor %}
 {% endblock %}

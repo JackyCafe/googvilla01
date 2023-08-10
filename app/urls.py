@@ -17,11 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from app import views
+from app.views import index,subitem_view,detail_view,create_work_record
 
 app_name='app'
 urlpatterns = [
-    path('', views.index),
-    path('sub_view/<int:id>',views.subitem_view,name='sub_view'),
-    path('detail_view/<int:id>',views.detail_view,name='detail_view'),
+    path('', index,name='index'),
+    path('sub_view/<int:id>', subitem_view,name='sub_view'),
+    path('detail_view/<int:id>', detail_view,name='detail_view'),
+    path('create_work_record/<int:id>', create_work_record,name='create_work_record'),
 ]

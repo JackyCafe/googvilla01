@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from app.models import MajorItem,SubItem,DetailItem
+from app.models import MajorItem,SubItem,DetailItem,WorkRecord
 
 
 # Register your models here.
@@ -18,3 +18,8 @@ class SubItemAdmin(admin.ModelAdmin):
 @admin.register(DetailItem)
 class DetailAdmin(admin.ModelAdmin):
     list_display = [field.name for field in DetailItem._meta.fields]
+
+
+@admin.register(WorkRecord)
+class WorkRecordAdmin(admin.ModelAdmin):
+    list_display = [field.name for field in WorkRecord._meta.fields]
