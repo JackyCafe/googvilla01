@@ -16,13 +16,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.routers import DefaultRouter
 
 from app.views import index,subitem_view,detail_view,create_work_record
+from app.viewsets import MajorItemViewSet,SubItemViewSet,DetailItemViewSet
 
 app_name='app'
+router = DefaultRouter()
+router.register('major',viewset=MajorItemViewSet),
+router.register('subitem',viewset=SubItemViewSet),
+router.register('detailitem',viewset=DetailItemViewSet)
+
 urlpatterns = [
     path('', index,name='index'),
     path('sub_view/<int:id>', subitem_view,name='sub_view'),
     path('detail_view/<int:id>', detail_view,name='detail_view'),
     path('create_work_record/<int:id>', create_work_record,name='create_work_record'),
+    path('api/',include(router.urls)),
 ]

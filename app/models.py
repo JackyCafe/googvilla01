@@ -46,17 +46,15 @@ class WorkRecord(models.Model):
     mood = models.CharField(max_length=3,choices=Mood_Choice,default=0,verbose_name='能量指標')
     comment = models.TextField(max_length=200,null=True,blank=True)
 
-    #todo write a function calculate spend time
 
     def calculate_spend_time(self):
         if self.start_time and self.end_time:
             time1=  datetime.datetime.strptime(self.end_time.strftime("%Y/%m/%d %H:%M:%S.%f"), "%Y/%m/%d %H:%M:%S.%f")
             time2=  datetime.datetime.strptime(self.start_time.strftime("%Y/%m/%d %H:%M:%S.%f"), "%Y/%m/%d %H:%M:%S.%f")
-
-            # time1 = datetime.timedelta(self.end_time.hour,self.end_time.minute,self.end_time.second)
-            # time2 = datetime.timedelta(self.start_time.hour,self.start_time.minute,self.start_time.second)
             time_diff = time1-time2
-            # time_diff = datetime.timedelta(self.end_time,self.start_time)
             self.spend_time = time_diff.total_seconds()/3600; #hours
             logging.info(f'time diff{time_diff}')
         self.save()
+
+    def __str__(self):
+        return '%s: %s'%(self.user, self.detail)
