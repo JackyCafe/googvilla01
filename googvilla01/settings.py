@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-vxn)&a#7)_xgucs2irfkvvyp)q79pn)1(^wao@e)*ux_3q=3-s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -58,6 +58,7 @@ ROOT_URLCONF = 'googvilla01.urls'
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:4200',
+    'http://120.110.115.80:4200'
 )
 
 TEMPLATES = [
