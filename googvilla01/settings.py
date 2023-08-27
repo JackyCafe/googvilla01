@@ -58,7 +58,8 @@ ROOT_URLCONF = 'googvilla01.urls'
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:4200',
-    'http://120.110.115.80:4200'
+    'http://120.110.115.80:4200',
+     'http://125.229.250.48:4200',
 )
 
 TEMPLATES = [

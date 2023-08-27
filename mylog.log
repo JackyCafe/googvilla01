@@ -3935,3 +3935,192 @@ django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '120.110.115.80
 2023-08-26 16:58 WARNING Not Found: /app/api//major 
 2023-08-26 16:58 INFO /media/yhlin/D/yhworkspace/Chamblain/googvilla01/settings.py changed, reloading. 
 2023-08-26 16:58 WARNING Not Found: /app/api//major 
+2023-08-26 22:05 INFO /media/yhlin/D/yhworkspace/Chamblain/googvilla01/settings.py changed, reloading. 
+2023-08-26 22:05 WARNING Not Found: / 
+2023-08-26 22:05 WARNING Not Found: /favicon.ico 
+2023-08-26 22:06 WARNING Not Found: / 
+2023-08-26 22:06 WARNING Not Found: /favicon.ico 
+2023-08-26 22:07 WARNING Not Found: /favicon.ico 
+2023-08-26 23:24 WARNING Not Found: /api/studentApi/ 
+2023-08-26 23:37 INFO /media/yhlin/D/yhworkspace/Chamblain/app/viewsets.py changed, reloading. 
+2023-08-26 23:42 WARNING Not Found: / 
+2023-08-26 23:42 WARNING Not Found: /app/api/subitem/2/ 
+2023-08-26 23:42 INFO /media/yhlin/D/yhworkspace/Chamblain/app/urls.py changed, reloading. 
+2023-08-26 23:43 INFO /media/yhlin/D/yhworkspace/Chamblain/app/urls.py changed, reloading. 
+2023-08-26 23:43 WARNING Not Found: /app/api/subitem/3/ 
+2023-08-26 23:43 WARNING Not Found: /app/api/subitem/3 
+2023-08-26 23:44 WARNING Not Found: /app/api/subitem/1/ 
+2023-08-26 23:44 WARNING Not Found: /app/api/subitem/1/ 
+2023-08-26 23:44 INFO /media/yhlin/D/yhworkspace/Chamblain/app/urls.py changed, reloading. 
+2023-08-26 23:44 WARNING Not Found: /app/api/subitem/1/ 
+2023-08-26 23:44 WARNING Not Found: / 
+2023-08-26 23:44 ERROR Internal Server Error: /app/api/subitem/<int:major_id>// 
+Traceback (most recent call last):
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/media/yhlin/D/yhworkspace/Chamblain/app/viewsets.py", line 22, in get_queryset
+    major_id = self.kwargs['major_id']
+KeyError: 'major_id'
+2023-08-26 23:44 WARNING Not Found: /app/api/subitem/2/ 
+2023-08-26 23:45 WARNING Not Found: /app/api/subitem/2 
+2023-08-26 23:45 INFO /media/yhlin/D/yhworkspace/Chamblain/app/urls.py changed, reloading. 
+2023-08-26 23:57 INFO /media/yhlin/D/yhworkspace/Chamblain/app/viewsets.py changed, reloading. 
+2023-08-26 23:59 WARNING Not Found: / 
+2023-08-26 23:59 WARNING Not Found: /app/api/detailitem/2 
+2023-08-27 00:00 ERROR Internal Server Error: /app/api/detail/2/ 
+Traceback (most recent call last):
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'SubItem' object has no attribute 'detail'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `detail` on serializer `DetailItemSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `SubItem` instance.
+Original exception text was: 'SubItem' object has no attribute 'detail'.
+2023-08-27 00:00 INFO /media/yhlin/D/yhworkspace/Chamblain/app/viewsets.py changed, reloading. 
+2023-08-27 00:01 WARNING Not Found: / 
+2023-08-27 00:02 WARNING Not Found: /app/api/detail 
+2023-08-27 00:02 ERROR Internal Server Error: /app/api/detail/2/ 
+Traceback (most recent call last):
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/media/yhlin/D/yhworkspace/Chamblain/app/viewsets.py", line 32, in get_queryset
+    return DetailItem.objects.filter(subitem_id=subitem_id)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1426, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1236, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/media/yhlin/D/yhworkspace/Pytorch/googvilla01/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1724, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'subitem_id' into field. Choices are: comment, detail, id, sub_item, sub_item_id, workrecord
+2023-08-27 00:03 INFO /media/yhlin/D/yhworkspace/Chamblain/app/viewsets.py changed, reloading. 
+2023-08-27 10:39 WARNING Not Found: / 
+2023-08-27 10:39 WARNING Not Found: /favicon.ico 
+2023-08-27 10:39 WARNING Not Found: /favicon.ico 
+2023-08-27 11:04 WARNING Not Found: /favicon.ico 
+2023-08-27 14:23 WARNING Not Found: /app/api/subitem 
+2023-08-27 14:25 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:25 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:27 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:27 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:29 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:31 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:31 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:32 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:34 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:34 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:34 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:36 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:36 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:36 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:37 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:39 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:39 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:41 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:41 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:44 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:44 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:44 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 14:45 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 15:11 WARNING Not Found: / 
+2023-08-27 15:11 WARNING Not Found: /favicon.ico 
+2023-08-27 15:19 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 15:20 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 15:21 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 15:21 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 15:24 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 15:25 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 15:29 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 15:51 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 15:52 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 15:53 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 15:53 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 15:53 WARNING Not Found: /app/api/subitem/val 
+2023-08-27 15:53 WARNING Not Found: /favicon.ico 
+2023-08-27 15:53 WARNING Not Found: /app/api/subitem/undefined 
+2023-08-27 15:55 WARNING Not Found: /app/api/subitem/undefined 
+2023-08-27 15:56 WARNING Not Found: /app/api/subitem/undefined 
+2023-08-27 15:56 WARNING Not Found: /app/api/subitem/undefined 
+2023-08-27 15:57 WARNING Not Found: /app/api/subitem/undefined 
+2023-08-27 15:58 WARNING Not Found: /app/api/subitem/undefined 
+2023-08-27 17:53 WARNING Not Found: /favicon.ico 
+2023-08-27 18:53 INFO /media/yhlin/D/yhworkspace/Chamblain/app/viewsets.py changed, reloading. 
+2023-08-27 18:53 WARNING Not Found: / 

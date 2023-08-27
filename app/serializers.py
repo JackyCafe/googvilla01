@@ -31,3 +31,4 @@ class WorkRecordSerializer(serializers.ModelSerializer):
     class Meta:
         model = WorkRecord;
         fields = '__all__'
+
