@@ -15,8 +15,16 @@ export class SharedService {
     return this.http.get(this.APIUrl+"/major");
   }
 
-  getSubItem(){
-    return this.http.get(this.APIUrl+"/subitem");
+  getSubItem(val:any){
+    return this.http.get(this.APIUrl+"/subitem/"+val);
+  }
+
+  getDetailItem(val:any){
+    return this.http.get(this.APIUrl+"/detail/"+val);
+  }
+
+  getWorkRecord(val:any){
+    return this.http.get(this.APIUrl+"/workrecord/"+val);
   }
 
 }
