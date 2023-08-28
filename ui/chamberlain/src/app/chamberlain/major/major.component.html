@@ -16,71 +16,38 @@
 
 </nav>
 
+<!--工作紀錄-->
 <nav class="navbar navbar-expand-sm bg-light navbar-dark">
   <ul class="navbar-nav" *ngFor="let di of detailitems">
     <button  class="m-1 btn btn-light btn-outline-primary"
-              (click)="openWorkRecord(di)"
+             data-toggle="modal" data-target="#exampleModal"
+             data-backdrop="static" data-keyboard="false"
+             (click)="openWorkRecord(di)"
              Button>{{di.detail}}</button>
   </ul>
 
+
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close"
+                  data-dismiss="modal" aria-label="Close"
+                  (click)="closeClick()" >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <app-workrecord  [det]="works"  [user]="1" [detailName]="detailName" *ngIf="ActivateAddEditComp">
+          </app-workrecord>
+        </div>
+      </div>
+    </div>
+  </div>
 </nav>
 
-  <table class="table table-striped">
-   <tr>
-    <th>
-      <div class="d-flex flex-row">
-        user</div>
-    </th>
-  </tr>
-  <tr>
-    <th>
-      <div class="d-flex flex-row">
-        detail</div>
-    </th>
-  </tr>
-  <tr>
-    <th>
-      <div class="d-flex flex-row">
-        start time</div>
-    </th>
-  </tr>
-  <tr>
-    <th>
-      <div class="d-flex flex-row">
-        end time</div>
-    </th>
-  </tr>
 
-  <tr>
-    <th>
-      <div class="d-flex flex-row">
-        spend hours</div>
-    </th>
-  </tr>
-  <tr>
-    <th>
-      <div class="d-flex flex-row">
-        bonus</div>
-    </th>
-  </tr>
-  <tr>
-    <th>
-      <div class="d-flex flex-row">
-        mood</div>
-    </th>
-  </tr>
-   <tbody>
-  <tr *ngFor="let di of this.works">
-      <td>{{di.user}}</td>
-      <td>{{di.detail}}</td>
-      <td>{{di.start_time}}</td>
-      <td>{{di.end_time}}</td>
-      <td>{{di.spend_time}}</td>
-      <td>{{di.bonus}}</td>
-      <td>{{di.mood}}</td>
-
-  </tr>
-
-  </tbody>
-</table>
 
