@@ -15,17 +15,22 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 
-from app.views import index,subitem_view,detail_view,create_work_record
-from app.viewsets import MajorItemViewSet,SubItemViewSet,DetailItemViewSet
+from app.views import create_work_record, detail_view, index, subitem_view
+from app.viewsets import (DetailItemViewSet, MajorItemViewSet, SubItemViewSet,
+                          WorkRecordViewSet)
 
 app_name='app'
 router = DefaultRouter()
 router.register('major',viewset=MajorItemViewSet),
-router.register('subitem',viewset=SubItemViewSet),
-router.register('detailitem',viewset=DetailItemViewSet)
+router.register(r'subitem/(?P<major_id>\d+)', SubItemViewSet, basename='subitem')
+# router.register('subitem/<int:major_id>/',viewset=SubItemViewSet,basename='subitem'),
+router.register(r'detail/(?P<subitem_id>\d+)', DetailItemViewSet, basename='detail')
+router.register(r'workrecord/(?P<detail_id>\d+)',WorkRecordViewSet,basename='workrecord')
+
+
 
 urlpatterns = [
     path('', index,name='index'),

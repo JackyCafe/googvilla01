@@ -3938,3 +3938,49 @@ django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '120.110.115.80
 2023-08-27 23:10 WARNING Not Found: / 
 2023-08-27 23:10 WARNING Not Found: /favicon.ico 
 2023-08-27 23:10 WARNING Not Found: / 
+2023-08-31 11:11 WARNING Not Found: / 
+2023-08-31 11:11 WARNING Not Found: /favicon.ico 
+2023-08-31 11:13 INFO /Users/yhlin/yhWorkspace/googvilla01/app/urls.py changed, reloading. 
+2023-08-31 11:13 INFO /Users/yhlin/yhWorkspace/googvilla01/app/viewsets.py changed, reloading. 
+2023-08-31 11:14 WARNING Not Found: /app/api/subitem/ 
+2023-08-31 14:06 WARNING Not Found: /app/api/workrecord 
+2023-08-31 14:17 WARNING Not Found: /app/api/workrecord/ 
+2023-08-31 14:17 WARNING Not Found: /app/api/workrecord/ 
+2023-08-31 14:17 WARNING Not Found: /favicon.ico 
+2023-08-31 14:18 WARNING Not Found: /app/api/workrecord 
+2023-08-31 14:33 ERROR Internal Server Error: /app/api/workrecord/1 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhWorkspace/googvilla01/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhWorkspace/googvilla01/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/Users/yhlin/yhWorkspace/googvilla01/venv/lib/python3.8/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/Users/yhlin/yhWorkspace/googvilla01/venv/lib/python3.8/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/app/api/workrecord/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2023-08-31 14:38 ERROR Internal Server Error: /app/api/workrecord/1 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhWorkspace/googvilla01/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhWorkspace/googvilla01/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/Users/yhlin/yhWorkspace/googvilla01/venv/lib/python3.8/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/Users/yhlin/yhWorkspace/googvilla01/venv/lib/python3.8/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/app/api/workrecord/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2023-08-31 14:39 ERROR Internal Server Error: /app/api/workrecord/1 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhWorkspace/googvilla01/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhWorkspace/googvilla01/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/Users/yhlin/yhWorkspace/googvilla01/venv/lib/python3.8/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/Users/yhlin/yhWorkspace/googvilla01/venv/lib/python3.8/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/app/api/workrecord/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2023-08-31 14:40 INFO /Users/yhlin/yhWorkspace/googvilla01/googvilla01/settings.py changed, reloading. 
+2023-08-31 14:41 WARNING Not Found: /app/api/workrecord/1 
+2023-08-31 14:43 WARNING Not Found: /app/api/workrecord/1 
