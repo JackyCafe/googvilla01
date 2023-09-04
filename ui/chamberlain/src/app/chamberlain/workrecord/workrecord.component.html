@@ -1,7 +1,11 @@
 林彥亨
 {{detailName}}
 <div class="form-froup row">
-
+  <div class="col-sm-10">
+    {{starttime}}-{{endtime}}
+  </div>
+</div>
+<div class="form-froup row">
   <label class="col-sm-2 col-form-label">心情指數</label>
   <div class="col-sm-10">
     <input type="radio" value="-2" [(ngModel)]="mood">-2
@@ -10,7 +14,8 @@
     <input type="radio" value="2" [(ngModel)]="mood">2
 
   </div>
-
+</div>
+<div class="form-froup row">
   <label class="col-sm-2 col-form-label">收入</label>
   <div class="col-sm-10">
     <input type="text" class="form-control"  [(ngModel)]="bonus"
@@ -20,8 +25,3 @@
     新增紀錄
   </button>
 </div>
-
-
-
-
-

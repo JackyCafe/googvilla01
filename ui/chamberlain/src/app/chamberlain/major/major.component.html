@@ -1,3 +1,5 @@
+{{starttime}}-{{endtime}}
+
 <nav class="navbar navbar-expand-sm bg-light navbar-dark">
   <ul class="navbar-nav" *ngFor="let item of lists">
     <button  class="m-1 btn btn-light btn-outline-primary"
@@ -41,13 +43,12 @@
           </button>
         </div>
         <div class="modal-body">
-          <app-workrecord  [det]="works"  [user]="1" [detailName]="detailName" [detailId]="detail" *ngIf="ActivateAddEditComp">
+       <app-workrecord  [det]="works"  [user]="1" [detailName]="detailName" [detailId]="detail"
+                        [starttime]="starttime" [endtime]="endtime"
+                          *ngIf="ActivateAddEditComp">
           </app-workrecord>
         </div>
       </div>
     </div>
   </div>
 </nav>
-
-
-

@@ -3984,3 +3984,67 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 2023-08-31 14:40 INFO /Users/yhlin/yhWorkspace/googvilla01/googvilla01/settings.py changed, reloading. 
 2023-08-31 14:41 WARNING Not Found: /app/api/workrecord/1 
 2023-08-31 14:43 WARNING Not Found: /app/api/workrecord/1 
+2023-09-02 17:55 WARNING Not Found: / 
+2023-09-02 17:55 WARNING Not Found: /favicon.ico 
+2023-09-02 17:55 WARNING Not Found: / 
+2023-09-02 19:08 WARNING Not Found: /api/studentApi/ 
+2023-09-02 19:08 WARNING Not Found: /api/studentApi/ 
+2023-09-02 21:12 WARNING Not Found: / 
+2023-09-02 21:12 WARNING Not Found: /favicon.ico 
+2023-09-02 22:49 WARNING Not Found: / 
+2023-09-02 22:49 WARNING Not Found: /favicon.ico 
+2023-09-02 22:50 WARNING Not Found: /app/api/wokrecord/1 
+2023-09-02 22:50 WARNING Not Found: /app/api/wokrecord/1/ 
+2023-09-02 22:51 WARNING Not Found: /app/api/wokrecord/1 
+2023-09-02 22:51 WARNING Not Found: /app/api/subitem 
+2023-09-02 22:51 WARNING Not Found: /app/api/subitem/ 
+2023-09-02 22:52 WARNING Not Found: /app/api/subitem/1 
+2023-09-02 22:52 WARNING Not Found: /app/api/workrecord1/ 
+2023-09-02 23:28 WARNING Not Found: /favicon.ico 
+2023-09-02 23:28 WARNING Not Found: /app/api/major 
+2023-09-02 23:29 WARNING Not Found: / 
+2023-09-02 23:29 WARNING Not Found: / 
+2023-09-02 23:30 WARNING Not Found: /app/api/major 
+2023-09-02 23:30 INFO /media/yhlin/D/yhworkspace/chamberlain/googvilla01/settings.py changed, reloading. 
+2023-09-02 23:31 WARNING Not Found: /app/api/major 
+2023-09-02 23:32 INFO /media/yhlin/D/yhworkspace/chamberlain/googvilla01/settings.py changed, reloading. 
+2023-09-02 23:35 WARNING Not Found: / 
+2023-09-02 23:35 WARNING Not Found: /favicon.ico 
+2023-09-02 23:36 WARNING Not Found: /app/api/workrecord/1/ 
+2023-09-02 23:38 WARNING Not Found: /app/api/workrecord/1 
+2023-09-02 23:40 WARNING Not Found: /app/api/workrecord/2 
+2023-09-02 23:42 WARNING Not Found: /app/api/workrecord/1 
+2023-09-02 23:42 WARNING Not Found: /app/api/workrecord/1 
+2023-09-02 23:43 WARNING Not Found: /app/api/workrecord/1 
+2023-09-02 23:45 WARNING Not Found: /app/api/workrecord/1 
+2023-09-02 23:45 WARNING Not Found: /app/api/workrecord/1/ 
+2023-09-02 23:45 WARNING Not Found: /app/api/workrecord/1/ 
+2023-09-02 23:45 WARNING Not Found: /app/api/workrecord/ 
+2023-09-02 23:45 INFO /media/yhlin/D/yhworkspace/chamberlain/app/urls.py changed, reloading. 
+2023-09-02 23:50 WARNING Not Found: /app/api/workrecord/ 
+2023-09-02 23:55 WARNING Bad Request: /app/api/workrecord/1/ 
+2023-09-03 00:27 INFO /media/yhlin/D/yhworkspace/chamberlain/googvilla01/settings.py changed, reloading. 
+2023-09-03 00:29 WARNING Not Found: / 
+2023-09-03 00:29 WARNING Not Found: /app/api/workrecord/ 
+2023-09-03 11:07 WARNING Not Found: / 
+2023-09-03 11:07 WARNING Not Found: /favicon.ico 
+2023-09-03 11:52 INFO /media/yhlin/D/yhworkspace/chamberlain/app/models.py changed, reloading. 
+2023-09-03 11:53 WARNING Not Found: / 
+2023-09-03 11:53 WARNING Not Found: /favicon.ico 
+2023-09-03 11:55 ERROR Internal Server Error: /app/api/workrecord/1 
+Traceback (most recent call last):
+  File "/media/yhlin/D/yhworkspace/chamberlain/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/media/yhlin/D/yhworkspace/chamberlain/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/media/yhlin/D/yhworkspace/chamberlain/venv/lib/python3.10/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/media/yhlin/D/yhworkspace/chamberlain/venv/lib/python3.10/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 120.110.115.80:8000/app/api/workrecord/1/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2023-09-03 11:55 WARNING Bad Request: /app/api/workrecord/1/ 
+2023-09-03 11:55 WARNING Bad Request: /app/api/workrecord/1/ 
+2023-09-03 16:58 WARNING Not Found: /favicon.ico 
+2023-09-03 17:07 WARNING Not Found: / 
+2023-09-03 17:07 WARNING Not Found: /favicon.ico 
+2023-09-03 17:10 WARNING Not Found: /favicon.ico 

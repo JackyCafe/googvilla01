@@ -1,5 +1,5 @@
-import { Component,OnInit } from '@angular/core';
-import {SharedService} from "../../shared.service";
+import {Component, Input, OnInit} from '@angular/core';
+import { SharedService } from "../../shared.service";
 
 @Component({
   selector: 'app-major',
@@ -7,6 +7,8 @@ import {SharedService} from "../../shared.service";
   styleUrls: ['./major.component.css']
 })
 export class MajorComponent implements OnInit{
+  @Input() starttime:any;
+  @Input() endtime:any;
   lists:any=[];
   major_id: number | undefined;
   item: any;
@@ -19,6 +21,7 @@ export class MajorComponent implements OnInit{
   ActivateAddEditComp: boolean =false;
   detailName: any;
   user:number=1
+
 
 
   constructor(private service:SharedService) {
@@ -60,6 +63,8 @@ export class MajorComponent implements OnInit{
     this.detailName = item.detail
     this.detail = item.id
     this.ActivateAddEditComp=true;
+    // this.starttime=st;
+    // this.endtime = et;
     this.service.getWorkRecord(this.detail).subscribe(data=>{
       this.works = data;
       //console.log(this.works)

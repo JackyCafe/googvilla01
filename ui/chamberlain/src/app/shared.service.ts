@@ -5,13 +5,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class SharedService {
-  //readonly APIUrl = "http://120.110.115.80:8000/app/api";
-  APIUrl = "http://localhost:8000/app/api";
+  readonly APIUrl = "http://120.110.115.80:8000/app/api";
+  // APIUrl = "http://localhost:8000/app/api";
 
   constructor(private http:HttpClient) { }
 
   getMajorList(){
-    return this.http.get(this.APIUrl+"/major");
+    return this.http.get(this.APIUrl+"/major/");
   }
 
   getSubItem(val:any){
