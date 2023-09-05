@@ -4048,3 +4048,112 @@ RuntimeError: You called this URL via POST, but the URL doesn't end in a slash a
 2023-09-03 17:07 WARNING Not Found: / 
 2023-09-03 17:07 WARNING Not Found: /favicon.ico 
 2023-09-03 17:10 WARNING Not Found: /favicon.ico 
+2023-09-05 10:18 WARNING Not Found: / 
+2023-09-05 10:18 WARNING Not Found: /favicon.ico 
+2023-09-05 10:45 WARNING Bad Request: /app/api/workrecord/1/ 
+2023-09-05 11:03 WARNING Not Found: /app/api/addworkdate/1/ 
+2023-09-05 11:04 WARNING Not Found: /app/api/addworkdate/1 
+2023-09-05 11:04 WARNING Not Found: /app/api/workrecord/1/2023-09-05/ 
+2023-09-05 11:08 INFO /Users/yhlin/yhWorkspace/goodvilla01/app/views.py changed, reloading. 
+2023-09-05 11:14 INFO /Users/yhlin/yhWorkspace/goodvilla01/app/urls.py changed, reloading. 
+2023-09-05 11:18 WARNING Not Found: /app/api/workrecord/1/2023-09-05/ 
+2023-09-05 11:19 WARNING Not Found: / 
+2023-09-05 11:19 WARNING Not Found: /app/api/workrecord/1/2023-09-03/ 
+2023-09-05 11:21 WARNING Not Found: / 
+2023-09-05 11:21 WARNING Not Found: / 
+2023-09-05 11:22 WARNING Not Found: /app/api/workrecord/1/2023-09-01/ 
+2023-09-05 11:23 WARNING Not Found: /app/api/workrecord/1/2023-08-05/ 
+2023-09-05 11:24 INFO /Users/yhlin/yhWorkspace/goodvilla01/app/views.py changed, reloading. 
+2023-09-05 11:24 WARNING Not Found: / 
+2023-09-05 11:25 WARNING Not Found: /app/api/workrecord/1/2023-08-05/ 
+2023-09-05 11:26 INFO /Users/yhlin/yhWorkspace/goodvilla01/app/urls.py changed, reloading. 
+2023-09-05 11:28 WARNING Not Found: / 
+2023-09-05 11:37 WARNING Not Found: / 
+2023-09-05 11:37 WARNING Not Found: /app/api/workrecord/1/2023/ 
+2023-09-05 11:38 WARNING Not Found: /app/api/workrecord/1/2023-08-05/ 
+2023-09-05 12:02 WARNING Not Found: / 
+2023-09-05 12:02 WARNING Not Found: /app/api/workrecord/1/2023-09-03/ 
+2023-09-05 12:04 WARNING Not Found: / 
+2023-09-05 12:05 WARNING Not Found: /app/api/workrecord/1/2023-09-03/ 
+2023-09-05 12:05 WARNING Not Found: /app/api/workrecord/1/2023-09-03/ 
+2023-09-05 12:08 WARNING Not Found: / 
+2023-09-05 12:09 WARNING Not Found: /app/api/workrecord/1/2023-09-03/ 
+2023-09-05 12:09 INFO /Users/yhlin/yhWorkspace/goodvilla01/app/viewsets.py changed, reloading. 
+2023-09-05 12:10 WARNING Not Found: /app/api/workrecord/1/2023-09-03/ 
+2023-09-05 12:10 WARNING Not Found: /app/api/workrecord/1/2023-09-03/ 
+2023-09-05 12:12 INFO /Users/yhlin/yhWorkspace/goodvilla01/app/urls.py changed, reloading. 
+2023-09-05 12:12 WARNING Not Found: /app/api/workrecord/1/2023-09-03/ 
+2023-09-05 12:12 WARNING Not Found: /app/api/workrecord/1/2023-09-03/ 
+2023-09-05 12:12 INFO /Users/yhlin/yhWorkspace/goodvilla01/app/urls.py changed, reloading. 
+2023-09-05 12:12 WARNING Not Found: /app/api/workrecord/1/2023-09-03/ 
+2023-09-05 12:12 WARNING Not Found: /app/api/workrecord/1/2023-09-03/ 
+2023-09-05 12:13 WARNING Not Found: /app/api/workrecord/1/2023-09-05/ 
+2023-09-05 12:13 INFO /Users/yhlin/yhWorkspace/goodvilla01/app/urls.py changed, reloading. 
+2023-09-05 12:13 ERROR Internal Server Error: /app/api/workrecord/2023-09-03/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/Users/yhlin/yhWorkspace/goodvilla01/app/viewsets.py", line 49, in get_queryset
+    detail_id = self.kwargs['detail_id']
+KeyError: 'detail_id'
+2023-09-05 12:14 INFO /Users/yhlin/yhWorkspace/goodvilla01/app/viewsets.py changed, reloading. 
+2023-09-05 12:14 ERROR Internal Server Error: /app/api/workrecord/2023-09-03/ 
+Traceback (most recent call last):
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/yhlin/yhWorkspace/goodvilla01/venv/lib/python3.10/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/Users/yhlin/yhWorkspace/goodvilla01/app/viewsets.py", line 50, in get_queryset
+    logging.info()
+TypeError: info() missing 1 required positional argument: 'msg'
+2023-09-05 12:14 INFO /Users/yhlin/yhWorkspace/goodvilla01/app/viewsets.py changed, reloading. 
+2023-09-05 12:14 INFO 2023-09-03 
+2023-09-05 12:14 INFO 2023-09-03 
+2023-09-05 12:16 INFO /Users/yhlin/yhWorkspace/goodvilla01/app/urls.py changed, reloading. 
+2023-09-05 12:16 INFO 2023-09-03 
+2023-09-05 12:16 INFO 2023-09-03 
+2023-09-05 12:16 INFO 2023-08-05 
+2023-09-05 12:16 INFO 2023-08-05 
+2023-09-05 14:03 INFO /Users/yhlin/yhWorkspace/goodvilla01/app/viewsets.py changed, reloading. 
+2023-09-05 14:15 WARNING Not Found: /app/api/workrecord/2023-09-05/ 
+2023-09-05 14:16 WARNING Not Found: /app/api/workrecord/2023-09-05/ 
+2023-09-05 14:16 INFO /Users/yhlin/yhWorkspace/goodvilla01/app/urls.py changed, reloading. 
+2023-09-05 14:20 WARNING Not Found: / 
+2023-09-05 14:20 WARNING Not Found: /app/api/workrecord/1/2023-09-03/ 
+2023-09-05 14:21 INFO 2023-09-03 
+2023-09-05 14:21 INFO 2023-09-05 
+2023-09-05 14:22 INFO 2023-09-05 
+2023-09-05 14:23 INFO 2023-09-05 
+2023-09-05 14:51 INFO 2023-09-05 
+2023-09-05 14:52 INFO 2023-09-05 
+2023-09-05 15:23 INFO 2023-09-05 

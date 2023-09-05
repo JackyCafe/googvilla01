@@ -1,12 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import {BehaviorSubject} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
 export class SharedService {
-  readonly APIUrl = "http://120.110.115.80:8000/app/api";
-  // APIUrl = "http://localhost:8000/app/api";
+  // readonly APIUrl = "http://120.110.115.80:8000/app/api";
+  APIUrl = "http://localhost:8000/app/api";
+  private closeClickSource = new BehaviorSubject<boolean>(false);
+  closeClick$ = this.closeClickSource.asObservable();
+
 
   constructor(private http:HttpClient) { }
 
@@ -22,12 +26,23 @@ export class SharedService {
     return this.http.get(this.APIUrl+"/detail/"+val);
   }
 
-  getWorkRecord(val:any){
-    return this.http.get(this.APIUrl+"/workrecord/"+val);
-  }
+  // getWorkRecord(val:any){
+  //   return this.http.get(this.APIUrl+"/workrecord/"+val);
+  // }
 
   addWorkRecord(val:any,detailId:any){
     return this.http.post(this.APIUrl+'/workrecord/'+detailId+"/",val);
+  }
+
+
+  getWorkRecord(detailId:any,date:any){
+    if (date==null)
+      return this.http.get(this.APIUrl+"/workrecord/"+detailId);
+    else
+      return this.http.get(this.APIUrl+'/workrecord/'+date);
+  }
+  sendCloseClickSignal() {
+    this.closeClickSource.next(true);
   }
 
 }

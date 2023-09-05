@@ -10,6 +10,7 @@ export class MajorComponent implements OnInit{
   @Input() starttime:any;
   @Input() endtime:any;
   lists:any=[];
+  datelist:any=[];
   major_id: number | undefined;
   item: any;
   subitems: any|undefined;
@@ -21,10 +22,16 @@ export class MajorComponent implements OnInit{
   ActivateAddEditComp: boolean =false;
   detailName: any;
   user:number=1
-
-
+  data:any
+  startTimeRange: string = ''; // 起始时间
+  endTimeRange: string = '';   // 结束时间
 
   constructor(private service:SharedService) {
+    this.service.closeClick$.subscribe((value) => {
+      if (value) {
+        this.closeClick(); // 執行 closeClick 方法
+      }
+    });
   }
 
   ngOnInit(): void {
@@ -49,12 +56,9 @@ export class MajorComponent implements OnInit{
   }
 
   openSubModal(item: any) {
-
     this.subitems_id = item.id;
     this.service.getDetailItem(this.subitems_id).subscribe(data=>{
       this.detailitems =data;
-
-
     });
   }
 
@@ -63,9 +67,7 @@ export class MajorComponent implements OnInit{
     this.detailName = item.detail
     this.detail = item.id
     this.ActivateAddEditComp=true;
-    // this.starttime=st;
-    // this.endtime = et;
-    this.service.getWorkRecord(this.detail).subscribe(data=>{
+    this.service.getWorkRecord(this.detail,null).subscribe(data=>{
       this.works = data;
       //console.log(this.works)
     })
@@ -76,4 +78,8 @@ export class MajorComponent implements OnInit{
     this.ActivateAddEditComp=false;
     // this.refreshDepList();
   }
+
+
 }
+
+

@@ -1,224 +1,228 @@
 
+<div class="container">
 
-
-<div class="horizontal_down">
-  <div class="horizontal_box box grid-container-horizontal" >
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('00:50')" [ngClass]="{'highlighted': isBetweenTime('00:50')}">00:50</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('00:40')" [ngClass]="{'highlighted': isBetweenTime('00:40')}">00:40</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('00:30')" [ngClass]="{'highlighted': isBetweenTime('00:30')}">00:30</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('00:20')" [ngClass]="{'highlighted': isBetweenTime('00:20')}">00:20</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('00:10')" [ngClass]="{'highlighted': isBetweenTime('00:10')}">00:10</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('00:00')" [ngClass]="{'highlighted': isBetweenTime('00:00')}">00:00</div>
-  </div>  <div class="horizontal_box box grid-container-horizontal" >
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('23:50')" [ngClass]="{'highlighted': isBetweenTime('23:50')}">23:50</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('23:40')" [ngClass]="{'highlighted': isBetweenTime('23:40')}">23:40</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('23:30')" [ngClass]="{'highlighted': isBetweenTime('23:30')}">23:30</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('23:20')" [ngClass]="{'highlighted': isBetweenTime('23:20')}">23:20</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('23:10')" [ngClass]="{'highlighted': isBetweenTime('23:10')}">23:10</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('23:00')" [ngClass]="{'highlighted': isBetweenTime('23:00')}">23:00</div>
-  </div>  <div class="horizontal_box box grid-container-horizontal" >
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('22:50')" [ngClass]="{'highlighted': isBetweenTime('22:50')}">22:50</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('22:40')" [ngClass]="{'highlighted': isBetweenTime('22:40')}">22:40</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('22:30')" [ngClass]="{'highlighted': isBetweenTime('22:30')}">22:30</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('22:20')" [ngClass]="{'highlighted': isBetweenTime('22:20')}">22:20</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('22:10')" [ngClass]="{'highlighted': isBetweenTime('22:10')}">22:10</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('22:00')" [ngClass]="{'highlighted': isBetweenTime('22:00')}">22:00</div>
-  </div>  <div class="horizontal_box box grid-container-horizontal" >
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('21:50')" [ngClass]="{'highlighted': isBetweenTime('21:50')}">21:50</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('21:40')" [ngClass]="{'highlighted': isBetweenTime('21:40')}">21:40</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('21:30')" [ngClass]="{'highlighted': isBetweenTime('21:30')}">21:30</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('21:20')" [ngClass]="{'highlighted': isBetweenTime('21:20')}">21:20</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('21:10')" [ngClass]="{'highlighted': isBetweenTime('21:10')}">21:10</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('21:00')" [ngClass]="{'highlighted': isBetweenTime('21:00')}">21:00</div>
-  </div>  <div class="horizontal_box box grid-container-horizontal" >
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('20:50')" [ngClass]="{'highlighted': isBetweenTime('20:50')}">20:50</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('20:40')" [ngClass]="{'highlighted': isBetweenTime('20:40')}">20:40</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('20:30')" [ngClass]="{'highlighted': isBetweenTime('20:30')}">20:30</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('20:20')" [ngClass]="{'highlighted': isBetweenTime('20:20')}">20:20</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('20:10')" [ngClass]="{'highlighted': isBetweenTime('20:10')}">20:10</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('20:00')" [ngClass]="{'highlighted': isBetweenTime('20:00')}">20:00</div>
+  <div class="horizontal_down">
+    <div class="empty_horizontal  grid-container-horizontal" >
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('00:50')" [ngClass]="{'highlighted': isBetweenTime('00:50')}">00:50</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('00:40')" [ngClass]="{'highlighted': isBetweenTime('00:40')}">00:40</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('00:30')" [ngClass]="{'highlighted': isBetweenTime('00:30')}">00:30</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('00:20')" [ngClass]="{'highlighted': isBetweenTime('00:20')}">00:20</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('00:10')" [ngClass]="{'highlighted': isBetweenTime('00:10')}">00:10</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('00:00')" [ngClass]="{'highlighted': isBetweenTime('00:00')}">00:00</div>
+    </div>
+    <div class="empty_horizontal  grid-container-horizontal" >
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('23:50')" [ngClass]="{'highlighted': isBetweenTime('23:50')}">23:50</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('23:40')" [ngClass]="{'highlighted': isBetweenTime('23:40')}">23:40</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('23:30')" [ngClass]="{'highlighted': isBetweenTime('23:30')}">23:30</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('23:20')" [ngClass]="{'highlighted': isBetweenTime('23:20')}">23:20</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('23:10')" [ngClass]="{'highlighted': isBetweenTime('23:10')}">23:10</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('23:00')" [ngClass]="{'highlighted': isBetweenTime('23:00')}">23:00</div>
+    </div>
+    <div class="empty_horizontal  grid-container-horizontal" >
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('22:50')" [ngClass]="{'highlighted': isBetweenTime('22:50')}">22:50</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('22:40')" [ngClass]="{'highlighted': isBetweenTime('22:40')}">22:40</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('22:30')" [ngClass]="{'highlighted': isBetweenTime('22:30')}">22:30</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('22:20')" [ngClass]="{'highlighted': isBetweenTime('22:20')}">22:20</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('22:10')" [ngClass]="{'highlighted': isBetweenTime('22:10')}">22:10</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('22:00')" [ngClass]="{'highlighted': isBetweenTime('22:00')}">22:00</div>
+    </div>  <div class="empty_horizontal  grid-container-horizontal" >
+    <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('21:50')" [ngClass]="{'highlighted': isBetweenTime('21:50')}">21:50</div>
+    <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('21:40')" [ngClass]="{'highlighted': isBetweenTime('21:40')}">21:40</div>
+    <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('21:30')" [ngClass]="{'highlighted': isBetweenTime('21:30')}">21:30</div>
+    <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('21:20')" [ngClass]="{'highlighted': isBetweenTime('21:20')}">21:20</div>
+    <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('21:10')" [ngClass]="{'highlighted': isBetweenTime('21:10')}">21:10</div>
+    <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('21:00')" [ngClass]="{'highlighted': isBetweenTime('21:00')}">21:00</div>
+  </div>  <div class="empty_horizontal  grid-container-horizontal" >
+    <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('20:50')" [ngClass]="{'highlighted': isBetweenTime('20:50')}">20:50</div>
+    <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('20:40')" [ngClass]="{'highlighted': isBetweenTime('20:40')}">20:40</div>
+    <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('20:30')" [ngClass]="{'highlighted': isBetweenTime('20:30')}">20:30</div>
+    <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('20:20')" [ngClass]="{'highlighted': isBetweenTime('20:20')}">20:20</div>
+    <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('20:10')" [ngClass]="{'highlighted': isBetweenTime('20:10')}">20:10</div>
+    <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('20:00')" [ngClass]="{'highlighted': isBetweenTime('20:00')}">20:00</div>
   </div>
-</div>
-<div class="vertical_right">
-    <div class="empty box grid-container" >
-      <div class="grid-item timer" (click)="onTimerClick('13:00')" [ngClass]="{'highlighted': isBetweenTime('13:00')}">13:00</div>
-      <div class="grid-item timer" (click)="onTimerClick('13:10')" [ngClass]="{'highlighted': isBetweenTime('13:10')}">13:10</div>
-      <div class="grid-item timer" (click)="onTimerClick('13:20')" [ngClass]="{'highlighted': isBetweenTime('13:20')}">13:20</div>
-      <div class="grid-item timer" (click)="onTimerClick('13:30')" [ngClass]="{'highlighted': isBetweenTime('13:30')}">13:30</div>
-      <div class="grid-item timer" (click)="onTimerClick('13:40')" [ngClass]="{'highlighted': isBetweenTime('13:40')}">13:40</div>
-      <div class="grid-item timer" (click)="onTimerClick('13:50')" [ngClass]="{'highlighted': isBetweenTime('13:50')}">13:50</div>
+  </div>
+  <!--右邊橫的 -->
+  <div class="vertical_right">
+    <div class="empty grid-container" >
+      <div class="grid-item box timer" (click)="onTimerClick('13:00')" [ngClass]="{'highlighted': isBetweenTime('13:00')}">13:00</div>
+      <div class="grid-item box timer" (click)="onTimerClick('13:10')" [ngClass]="{'highlighted': isBetweenTime('13:10')}">13:10</div>
+      <div class="grid-item box timer" (click)="onTimerClick('13:20')" [ngClass]="{'highlighted': isBetweenTime('13:20')}">13:20</div>
+      <div class="grid-item box timer" (click)="onTimerClick('13:30')" [ngClass]="{'highlighted': isBetweenTime('13:30')}">13:30</div>
+      <div class="grid-item box timer" (click)="onTimerClick('13:40')" [ngClass]="{'highlighted': isBetweenTime('13:40')}">13:40</div>
+      <div class="grid-item box timer" (click)="onTimerClick('13:50')" [ngClass]="{'highlighted': isBetweenTime('13:50')}">13:50</div>
 
     </div>
-  <div class="empty box grid-container" >
-    <div class="grid-item timer" (click)="onTimerClick('14:00')" [ngClass]="{'highlighted': isBetweenTime('14:00')}">14:00</div>
-    <div class="grid-item timer" (click)="onTimerClick('14:10')" [ngClass]="{'highlighted': isBetweenTime('14:10')}">14:10</div>
-    <div class="grid-item timer" (click)="onTimerClick('14:20')" [ngClass]="{'highlighted': isBetweenTime('14:20')}">14:20</div>
-    <div class="grid-item timer" (click)="onTimerClick('14:30')" [ngClass]="{'highlighted': isBetweenTime('14:30')}">14:30</div>
-    <div class="grid-item timer" (click)="onTimerClick('14:40')" [ngClass]="{'highlighted': isBetweenTime('14:40')}">14:40</div>
-    <div class="grid-item timer" (click)="onTimerClick('14:50')" [ngClass]="{'highlighted': isBetweenTime('14:50')}">14:50</div>
+    <div class="empty grid-container" >
+      <div class="grid-item box timer" (click)="onTimerClick('14:00')" [ngClass]="{'highlighted': isBetweenTime('14:00')}">14:00</div>
+      <div class="grid-item box timer" (click)="onTimerClick('14:10')" [ngClass]="{'highlighted': isBetweenTime('14:10')}">14:10</div>
+      <div class="grid-item box timer" (click)="onTimerClick('14:20')" [ngClass]="{'highlighted': isBetweenTime('14:20')}">14:20</div>
+      <div class="grid-item box timer" (click)="onTimerClick('14:30')" [ngClass]="{'highlighted': isBetweenTime('14:30')}">14:30</div>
+      <div class="grid-item box timer" (click)="onTimerClick('14:40')" [ngClass]="{'highlighted': isBetweenTime('14:40')}">14:40</div>
+      <div class="grid-item box timer" (click)="onTimerClick('14:50')" [ngClass]="{'highlighted': isBetweenTime('14:50')}">14:50</div>
+
+    </div>
+
+    <div class="empty grid-container" >
+      <div class="grid-item box timer" (click)="onTimerClick('15:00')" [ngClass]="{'highlighted': isBetweenTime('15:00')}">15:00</div>
+      <div class="grid-item box timer" (click)="onTimerClick('15:10')" [ngClass]="{'highlighted': isBetweenTime('15:10')}">15:10</div>
+      <div class="grid-item box timer" (click)="onTimerClick('15:20')" [ngClass]="{'highlighted': isBetweenTime('15:20')}">15:20</div>
+      <div class="grid-item box timer" (click)="onTimerClick('15:30')" [ngClass]="{'highlighted': isBetweenTime('15:30')}">15:30</div>
+      <div class="grid-item box timer" (click)="onTimerClick('15:40')" [ngClass]="{'highlighted': isBetweenTime('15:40')}">15:40</div>
+      <div class="grid-item box timer" (click)="onTimerClick('15:50')" [ngClass]="{'highlighted': isBetweenTime('15:50')}">15:50</div>
+
+    </div>
+    <div class="empty grid-container" >
+      <div class="grid-item box timer" (click)="onTimerClick('16:00')" [ngClass]="{'highlighted': isBetweenTime('16:00')}">16:00</div>
+      <div class="grid-item box timer" (click)="onTimerClick('16:10')" [ngClass]="{'highlighted': isBetweenTime('16:10')}">16:10</div>
+      <div class="grid-item box timer" (click)="onTimerClick('16:20')" [ngClass]="{'highlighted': isBetweenTime('16:20')}">16:20</div>
+      <div class="grid-item box timer" (click)="onTimerClick('16:30')" [ngClass]="{'highlighted': isBetweenTime('16:30')}">16:30</div>
+      <div class="grid-item box timer" (click)="onTimerClick('16:40')" [ngClass]="{'highlighted': isBetweenTime('16:40')}">16:40</div>
+      <div class="grid-item box timer" (click)="onTimerClick('16:50')" [ngClass]="{'highlighted': isBetweenTime('16:50')}">16:50</div>
+    </div>
+    <div class="empty grid-container" >
+      <div class="grid-item box timer" (click)="onTimerClick('17:00')" [ngClass]="{'highlighted': isBetweenTime('17:00')}">17:00</div>
+      <div class="grid-item box timer" (click)="onTimerClick('17:10')" [ngClass]="{'highlighted': isBetweenTime('17:10')}">17:10</div>
+      <div class="grid-item box timer" (click)="onTimerClick('17:20')" [ngClass]="{'highlighted': isBetweenTime('17:20')}">17:20</div>
+      <div class="grid-item box timer" (click)="onTimerClick('17:30')" [ngClass]="{'highlighted': isBetweenTime('17:30')}">17:30</div>
+      <div class="grid-item box timer" (click)="onTimerClick('17:40')" [ngClass]="{'highlighted': isBetweenTime('17:40')}">17:40</div>
+      <div class="grid-item box timer" (click)="onTimerClick('17:50')" [ngClass]="{'highlighted': isBetweenTime('17:50')}">17:50</div>
+    </div>
+
+    <div class="empty grid-container" >
+      <div class="grid-item box  timer" (click)="onTimerClick('18:00')" [ngClass]="{'highlighted': isBetweenTime('18:00')}">18:00</div>
+      <div class="grid-item box timer" (click)="onTimerClick('18:10')" [ngClass]="{'highlighted': isBetweenTime('18:10')}">18:10</div>
+      <div class="grid-item box timer" (click)="onTimerClick('18:20')" [ngClass]="{'highlighted': isBetweenTime('18:20')}">18:20</div>
+      <div class="grid-item box timer" (click)="onTimerClick('18:30')" [ngClass]="{'highlighted': isBetweenTime('18:30')}">18:30</div>
+      <div class="grid-item box timer" (click)="onTimerClick('18:40')" [ngClass]="{'highlighted': isBetweenTime('18:40')}">18:40</div>
+      <div class="grid-item box timer" (click)="onTimerClick('18:50')" [ngClass]="{'highlighted': isBetweenTime('18:50')}">18:50</div>
+    </div>
+    <div class="empty grid-container" >
+      <div class="grid-item box timer" (click)="onTimerClick('19:00')" [ngClass]="{'highlighted': isBetweenTime('19:00')}">19:00</div>
+      <div class="grid-item box timer" (click)="onTimerClick('19:10')" [ngClass]="{'highlighted': isBetweenTime('19:10')}">19:10</div>
+      <div class="grid-item box timer" (click)="onTimerClick('19:20')" [ngClass]="{'highlighted': isBetweenTime('19:20')}">19:20</div>
+      <div class="grid-item box timer" (click)="onTimerClick('19:30')" [ngClass]="{'highlighted': isBetweenTime('19:30')}">19:30</div>
+      <div class="grid-item box timer" (click)="onTimerClick('19:40')" [ngClass]="{'highlighted': isBetweenTime('19:40')}">19:40</div>
+      <div class="grid-item box timer" (click)="onTimerClick('19:50')" [ngClass]="{'highlighted': isBetweenTime('19:50')}">19:50</div>
+    </div>
 
   </div>
 
-  <div class="empty box grid-container" >
-    <div class="grid-item timer" (click)="onTimerClick('15:00')" [ngClass]="{'highlighted': isBetweenTime('15:00')}">15:00</div>
-    <div class="grid-item timer" (click)="onTimerClick('15:10')" [ngClass]="{'highlighted': isBetweenTime('15:10')}">15:10</div>
-    <div class="grid-item timer" (click)="onTimerClick('15:20')" [ngClass]="{'highlighted': isBetweenTime('15:20')}">15:20</div>
-    <div class="grid-item timer" (click)="onTimerClick('15:30')" [ngClass]="{'highlighted': isBetweenTime('15:30')}">15:30</div>
-    <div class="grid-item timer" (click)="onTimerClick('15:40')" [ngClass]="{'highlighted': isBetweenTime('15:40')}">15:40</div>
-    <div class="grid-item timer" (click)="onTimerClick('15:50')" [ngClass]="{'highlighted': isBetweenTime('15:50')}">15:50</div>
 
-  </div>
-  <div class="empty box grid-container" >
-    <div class="grid-item timer" (click)="onTimerClick('16:00')" [ngClass]="{'highlighted': isBetweenTime('16:00')}">16:00</div>
-    <div class="grid-item timer" (click)="onTimerClick('16:10')" [ngClass]="{'highlighted': isBetweenTime('16:10')}">16:10</div>
-    <div class="grid-item timer" (click)="onTimerClick('16:20')" [ngClass]="{'highlighted': isBetweenTime('16:20')}">16:20</div>
-    <div class="grid-item timer" (click)="onTimerClick('16:30')" [ngClass]="{'highlighted': isBetweenTime('16:30')}">16:30</div>
-    <div class="grid-item timer" (click)="onTimerClick('16:40')" [ngClass]="{'highlighted': isBetweenTime('16:40')}">16:40</div>
-    <div class="grid-item timer" (click)="onTimerClick('16:50')" [ngClass]="{'highlighted': isBetweenTime('16:50')}">16:50</div>
-  </div>
-  <div class="empty box grid-container" >
-    <div class="grid-item timer" (click)="onTimerClick('17:00')" [ngClass]="{'highlighted': isBetweenTime('17:00')}">17:00</div>
-    <div class="grid-item timer" (click)="onTimerClick('17:10')" [ngClass]="{'highlighted': isBetweenTime('17:10')}">17:10</div>
-    <div class="grid-item timer" (click)="onTimerClick('17:20')" [ngClass]="{'highlighted': isBetweenTime('17:20')}">17:20</div>
-    <div class="grid-item timer" (click)="onTimerClick('17:30')" [ngClass]="{'highlighted': isBetweenTime('17:30')}">17:30</div>
-    <div class="grid-item timer" (click)="onTimerClick('17:40')" [ngClass]="{'highlighted': isBetweenTime('17:40')}">17:40</div>
-    <div class="grid-item timer" (click)="onTimerClick('17:50')" [ngClass]="{'highlighted': isBetweenTime('17:50')}">17:50</div>
-  </div>
+  <div class="horizontal_up">
 
-  <div class="empty box grid-container" >
-    <div class="grid-item timer" (click)="onTimerClick('18:00')" [ngClass]="{'highlighted': isBetweenTime('18:00')}">18:00</div>
-    <div class="grid-item timer" (click)="onTimerClick('18:10')" [ngClass]="{'highlighted': isBetweenTime('18:10')}">18:10</div>
-    <div class="grid-item timer" (click)="onTimerClick('18:20')" [ngClass]="{'highlighted': isBetweenTime('18:20')}">18:20</div>
-    <div class="grid-item timer" (click)="onTimerClick('18:30')" [ngClass]="{'highlighted': isBetweenTime('18:30')}">18:30</div>
-    <div class="grid-item timer" (click)="onTimerClick('18:40')" [ngClass]="{'highlighted': isBetweenTime('18:40')}">18:40</div>
-    <div class="grid-item timer" (click)="onTimerClick('18:50')" [ngClass]="{'highlighted': isBetweenTime('18:50')}">18:50</div>
-  </div>
-  <div class="empty box grid-container" >
-    <div class="grid-item timer" (click)="onTimerClick('19:00')" [ngClass]="{'highlighted': isBetweenTime('19:00')}">19:00</div>
-    <div class="grid-item timer" (click)="onTimerClick('19:10')" [ngClass]="{'highlighted': isBetweenTime('19:10')}">19:10</div>
-    <div class="grid-item timer" (click)="onTimerClick('19:20')" [ngClass]="{'highlighted': isBetweenTime('19:20')}">19:20</div>
-    <div class="grid-item timer" (click)="onTimerClick('19:30')" [ngClass]="{'highlighted': isBetweenTime('19:30')}">19:30</div>
-    <div class="grid-item timer" (click)="onTimerClick('19:40')" [ngClass]="{'highlighted': isBetweenTime('19:40')}">19:40</div>
-    <div class="grid-item timer" (click)="onTimerClick('19:50')" [ngClass]="{'highlighted': isBetweenTime('19:50')}">19:50</div>
-  </div>
+    <div class="empty_horizontal grid-container-horizontal" >
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('8:00')" [ngClass]="{'highlighted': isBetweenTime('8:00')}">8:00</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('8:10')" [ngClass]="{'highlighted': isBetweenTime('8:10')}">8:10</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('8:20')" [ngClass]="{'highlighted': isBetweenTime('8:20')}">8:20</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('8:30')" [ngClass]="{'highlighted': isBetweenTime('8:30')}">8:30</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('8:40')" [ngClass]="{'highlighted': isBetweenTime('8:40')}">8:40</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('8:50')" [ngClass]="{'highlighted': isBetweenTime('8:50')}">8:50</div>
+    </div>
+    <div class="empty_horizontal  grid-container-horizontal" >
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('9:00')" [ngClass]="{'highlighted': isBetweenTime('9:00')}">9:00</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('9:10')" [ngClass]="{'highlighted': isBetweenTime('9:10')}">9:10</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('9:20')" [ngClass]="{'highlighted': isBetweenTime('9:20')}">9:20</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('9:30')" [ngClass]="{'highlighted': isBetweenTime('9:30')}">9:30</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('9:40')" [ngClass]="{'highlighted': isBetweenTime('9:40')}">9:40</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('9:50')" [ngClass]="{'highlighted': isBetweenTime('9:50')}">9:50</div>
 
-</div>
+    </div>
+    <div class="empty_horizontal grid-container-horizontal" >
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('10:10')" [ngClass]="{'highlighted': isBetweenTime('10:00')}">10:00</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('10:10')" [ngClass]="{'highlighted': isBetweenTime('10:10')}">10:10</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('10:20')" [ngClass]="{'highlighted': isBetweenTime('10:20')}">10:20</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('10:30')" [ngClass]="{'highlighted': isBetweenTime('10:30')}">10:30</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('10:40')" [ngClass]="{'highlighted': isBetweenTime('10:40')}">10:40</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('10:50')" [ngClass]="{'highlighted': isBetweenTime('10:50')}">10:50</div>
 
+    </div>
+    <div class="empty_horizontal grid-container-horizontal" >
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('11:00')" [ngClass]="{'highlighted': isBetweenTime('11:00')}">11:00</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('11:10')" [ngClass]="{'highlighted': isBetweenTime('11:10')}">11:10</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('11:20')" [ngClass]="{'highlighted': isBetweenTime('11:20')}">11:20</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('11:30')" [ngClass]="{'highlighted': isBetweenTime('11:30')}">11:30</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('11:40')" [ngClass]="{'highlighted': isBetweenTime('11:40')}">11:40</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('11:50')" [ngClass]="{'highlighted': isBetweenTime('11:50')}">11:50</div>
 
-<div class="horizontal_up">
-
-  <div class="horizontal_box box grid-container-horizontal" >
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('8:00')" [ngClass]="{'highlighted': isBetweenTime('8:00')}">8:00</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('8:10')" [ngClass]="{'highlighted': isBetweenTime('8:10')}">8:10</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('8:20')" [ngClass]="{'highlighted': isBetweenTime('8:20')}">8:20</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('8:30')" [ngClass]="{'highlighted': isBetweenTime('8:30')}">8:30</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('8:40')" [ngClass]="{'highlighted': isBetweenTime('8:40')}">8:40</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('8:50')" [ngClass]="{'highlighted': isBetweenTime('8:50')}">8:50</div>
+    </div>
+    <div class="empty_horizontal grid-container-horizontal" >
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('12:00')" [ngClass]="{'highlighted': isBetweenTime('12:00')}">12:00</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('12:10')" [ngClass]="{'highlighted': isBetweenTime('12:10')}">12:10</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('12:20')" [ngClass]="{'highlighted': isBetweenTime('12:20')}">12:20</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('12:30')" [ngClass]="{'highlighted': isBetweenTime('12:30')}">12:30</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('12:40')" [ngClass]="{'highlighted': isBetweenTime('12:40')}">12:40</div>
+      <div class="grid-item hbox timer-horizontal" (click)="onTimerClick('12:50')" [ngClass]="{'highlighted': isBetweenTime('12:50')}">12:50</div>
+    </div>
   </div>
-  <div class="horizontal_box box grid-container-horizontal" >
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('9:00')" [ngClass]="{'highlighted': isBetweenTime('9:00')}">9:00</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('9:10')" [ngClass]="{'highlighted': isBetweenTime('9:10')}">9:10</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('9:20')" [ngClass]="{'highlighted': isBetweenTime('9:20')}">9:20</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('9:30')" [ngClass]="{'highlighted': isBetweenTime('9:30')}">9:30</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('9:40')" [ngClass]="{'highlighted': isBetweenTime('9:40')}">9:40</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('9:50')" [ngClass]="{'highlighted': isBetweenTime('9:50')}">9:50</div>
+  <div class="vertical_left">
+    <div class="empty  grid-container" >
+      <div class="grid-item box timer" (click)="onTimerClick('7:50')" [ngClass]="{'highlighted': isBetweenTime('7:50')}">7:50</div>
+      <div class="grid-item box timer" (click)="onTimerClick('7:40')" [ngClass]="{'highlighted': isBetweenTime('7:40')}">7:40</div>
+      <div class="grid-item box timer" (click)="onTimerClick('7:30')" [ngClass]="{'highlighted': isBetweenTime('7:30')}">7:30</div>
+      <div class="grid-item box timer" (click)="onTimerClick('7:20')" [ngClass]="{'highlighted': isBetweenTime('7:20')}">7:20</div>
+      <div class="grid-item box timer" (click)="onTimerClick('7:10')" [ngClass]="{'highlighted': isBetweenTime('7:10')}">7:10</div>
+      <div class="grid-item box timer" (click)="onTimerClick('7:00')" [ngClass]="{'highlighted': isBetweenTime('7:00')}">7:00</div>
 
-  </div>
-  <div class="horizontal_box box grid-container-horizontal" >
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('10:10')" [ngClass]="{'highlighted': isBetweenTime('10:00')}">10:00</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('10:10')" [ngClass]="{'highlighted': isBetweenTime('10:10')}">10:10</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('10:20')" [ngClass]="{'highlighted': isBetweenTime('10:20')}">10:20</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('10:30')" [ngClass]="{'highlighted': isBetweenTime('10:30')}">10:30</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('10:40')" [ngClass]="{'highlighted': isBetweenTime('10:40')}">10:40</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('10:50')" [ngClass]="{'highlighted': isBetweenTime('10:50')}">10:50</div>
+    </div>
+    <div class="empty  grid-container" >
+      <div class="grid-item box timer" (click)="onTimerClick('6:50')" [ngClass]="{'highlighted': isBetweenTime('6:50')}">6:50</div>
+      <div class="grid-item box timer" (click)="onTimerClick('6:40')" [ngClass]="{'highlighted': isBetweenTime('6:40')}">6:40</div>
+      <div class="grid-item box timer" (click)="onTimerClick('6:30')" [ngClass]="{'highlighted': isBetweenTime('6:30')}">6:30</div>
+      <div class="grid-item box timer" (click)="onTimerClick('6:20')" [ngClass]="{'highlighted': isBetweenTime('6:20')}">6:20</div>
+      <div class="grid-item box timer" (click)="onTimerClick('6:10')" [ngClass]="{'highlighted': isBetweenTime('6:10')}">6:10</div>
+      <div class="grid-item box timer" (click)="onTimerClick('6:00')" [ngClass]="{'highlighted': isBetweenTime('6:00')}">6:00</div>
 
-  </div>
-  <div class="horizontal_box box grid-container-horizontal" >
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('11:00')" [ngClass]="{'highlighted': isBetweenTime('11:00')}">11:00</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('11:10')" [ngClass]="{'highlighted': isBetweenTime('11:10')}">11:10</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('11:20')" [ngClass]="{'highlighted': isBetweenTime('11:20')}">11:20</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('11:30')" [ngClass]="{'highlighted': isBetweenTime('11:30')}">11:30</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('11:40')" [ngClass]="{'highlighted': isBetweenTime('11:40')}">11:40</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('11:50')" [ngClass]="{'highlighted': isBetweenTime('11:50')}">11:50</div>
-
-  </div>
-  <div class="horizontal_box box grid-container-horizontal" >
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('12:00')" [ngClass]="{'highlighted': isBetweenTime('12:00')}">12:00</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('12:10')" [ngClass]="{'highlighted': isBetweenTime('12:10')}">12:10</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('12:20')" [ngClass]="{'highlighted': isBetweenTime('12:20')}">12:20</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('12:30')" [ngClass]="{'highlighted': isBetweenTime('12:30')}">12:30</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('12:40')" [ngClass]="{'highlighted': isBetweenTime('12:40')}">12:40</div>
-    <div class="grid-item timer-horizontal" (click)="onTimerClick('12:50')" [ngClass]="{'highlighted': isBetweenTime('12:50')}">12:50</div>
-  </div>
-</div>
-<div class="vertical_left">
-  <div class="empty box grid-container" >
-    <div class="grid-item timer" (click)="onTimerClick('7:50')" [ngClass]="{'highlighted': isBetweenTime('7:50')}">7:50</div>
-    <div class="grid-item timer" (click)="onTimerClick('7:40')" [ngClass]="{'highlighted': isBetweenTime('7:40')}">7:40</div>
-    <div class="grid-item timer" (click)="onTimerClick('7:30')" [ngClass]="{'highlighted': isBetweenTime('7:30')}">7:30</div>
-    <div class="grid-item timer" (click)="onTimerClick('7:20')" [ngClass]="{'highlighted': isBetweenTime('7:20')}">7:20</div>
-    <div class="grid-item timer" (click)="onTimerClick('7:10')" [ngClass]="{'highlighted': isBetweenTime('7:10')}">7:10</div>
-    <div class="grid-item timer" (click)="onTimerClick('7:00')" [ngClass]="{'highlighted': isBetweenTime('7:00')}">7:00</div>
-
-  </div>
-  <div class="empty box grid-container" >
-    <div class="grid-item timer" (click)="onTimerClick('6:50')" [ngClass]="{'highlighted': isBetweenTime('6:50')}">6:50</div>
-    <div class="grid-item timer" (click)="onTimerClick('6:40')" [ngClass]="{'highlighted': isBetweenTime('6:40')}">6:40</div>
-    <div class="grid-item timer" (click)="onTimerClick('6:30')" [ngClass]="{'highlighted': isBetweenTime('6:30')}">6:30</div>
-    <div class="grid-item timer" (click)="onTimerClick('6:20')" [ngClass]="{'highlighted': isBetweenTime('6:20')}">6:20</div>
-    <div class="grid-item timer" (click)="onTimerClick('6:10')" [ngClass]="{'highlighted': isBetweenTime('6:10')}">6:10</div>
-    <div class="grid-item timer" (click)="onTimerClick('6:00')" [ngClass]="{'highlighted': isBetweenTime('6:00')}">6:00</div>
-
-  </div>
-  <div class="empty box grid-container" >
-    <div class="grid-item timer" (click)="onTimerClick('5:50')" [ngClass]="{'highlighted': isBetweenTime('5:50')}">5:50</div>
-    <div class="grid-item timer" (click)="onTimerClick('5:40')" [ngClass]="{'highlighted': isBetweenTime('5:40')}">5:40</div>
-    <div class="grid-item timer" (click)="onTimerClick('5:30')" [ngClass]="{'highlighted': isBetweenTime('5:30')}">5:30</div>
-    <div class="grid-item timer" (click)="onTimerClick('5:20')" [ngClass]="{'highlighted': isBetweenTime('5:20')}">5:20</div>
-    <div class="grid-item timer" (click)="onTimerClick('5:10')" [ngClass]="{'highlighted': isBetweenTime('5:10')}">5:10</div>
-    <div class="grid-item timer" (click)="onTimerClick('5:00')" [ngClass]="{'highlighted': isBetweenTime('5:00')}">5:00</div>
+    </div>
+    <div class="empty  grid-container" >
+      <div class="grid-item box timer" (click)="onTimerClick('5:50')" [ngClass]="{'highlighted': isBetweenTime('5:50')}">5:50</div>
+      <div class="grid-item box timer" (click)="onTimerClick('5:40')" [ngClass]="{'highlighted': isBetweenTime('5:40')}">5:40</div>
+      <div class="grid-item box timer" (click)="onTimerClick('5:30')" [ngClass]="{'highlighted': isBetweenTime('5:30')}">5:30</div>
+      <div class="grid-item box timer" (click)="onTimerClick('5:20')" [ngClass]="{'highlighted': isBetweenTime('5:20')}">5:20</div>
+      <div class="grid-item box timer" (click)="onTimerClick('5:10')" [ngClass]="{'highlighted': isBetweenTime('5:10')}">5:10</div>
+      <div class="grid-item box timer" (click)="onTimerClick('5:00')" [ngClass]="{'highlighted': isBetweenTime('5:00')}">5:00</div>
 
 
-  </div>
-  <div class="empty box grid-container" >
-    <div class="grid-item timer" (click)="onTimerClick('4:50')" [ngClass]="{'highlighted': isBetweenTime('4:50')}">4:50</div>
-    <div class="grid-item timer" (click)="onTimerClick('4:40')" [ngClass]="{'highlighted': isBetweenTime('4:40')}">4:40</div>
-    <div class="grid-item timer" (click)="onTimerClick('4:30')" [ngClass]="{'highlighted': isBetweenTime('4:30')}">4:30</div>
-    <div class="grid-item timer" (click)="onTimerClick('4:20')" [ngClass]="{'highlighted': isBetweenTime('4:20')}">4:20</div>
-    <div class="grid-item timer" (click)="onTimerClick('4:10')" [ngClass]="{'highlighted': isBetweenTime('4:10')}">4:10</div>
-    <div class="grid-item timer" (click)="onTimerClick('4:00')" [ngClass]="{'highlighted': isBetweenTime('4:00')}">4:00</div>
+    </div>
+    <div class="empty  grid-container" >
+      <div class="grid-item box timer" (click)="onTimerClick('4:50')" [ngClass]="{'highlighted': isBetweenTime('4:50')}">4:50</div>
+      <div class="grid-item box timer" (click)="onTimerClick('4:40')" [ngClass]="{'highlighted': isBetweenTime('4:40')}">4:40</div>
+      <div class="grid-item box timer" (click)="onTimerClick('4:30')" [ngClass]="{'highlighted': isBetweenTime('4:30')}">4:30</div>
+      <div class="grid-item box timer" (click)="onTimerClick('4:20')" [ngClass]="{'highlighted': isBetweenTime('4:20')}">4:20</div>
+      <div class="grid-item box timer" (click)="onTimerClick('4:10')" [ngClass]="{'highlighted': isBetweenTime('4:10')}">4:10</div>
+      <div class="grid-item box timer" (click)="onTimerClick('4:00')" [ngClass]="{'highlighted': isBetweenTime('4:00')}">4:00</div>
 
-  </div>
-  <div class="empty box grid-container" id="3">
-    <div class="grid-item timer" (click)="onTimerClick('3:50')" [ngClass]="{'highlighted': isBetweenTime('3:50')}">3:50</div>
-    <div class="grid-item timer" (click)="onTimerClick('3:40')" [ngClass]="{'highlighted': isBetweenTime('3:40')}">3:40</div>
-    <div class="grid-item timer" (click)="onTimerClick('3:30')" [ngClass]="{'highlighted': isBetweenTime('3:30')}">3:30</div>
-    <div class="grid-item timer" (click)="onTimerClick('3:20')" [ngClass]="{'highlighted': isBetweenTime('3:20')}">3:20</div>
-    <div class="grid-item timer" (click)="onTimerClick('3:10')" [ngClass]="{'highlighted': isBetweenTime('3:10')}">3:10</div>
-    <div class="grid-item timer" (click)="onTimerClick('3:00')" [ngClass]="{'highlighted': isBetweenTime('3:00')}">3:00</div>
+    </div>
+    <div class="empty grid-container" id="3">
+      <div class="grid-item box timer" (click)="onTimerClick('3:50')" [ngClass]="{'highlighted': isBetweenTime('3:50')}">3:50</div>
+      <div class="grid-item box timer" (click)="onTimerClick('3:40')" [ngClass]="{'highlighted': isBetweenTime('3:40')}">3:40</div>
+      <div class="grid-item box timer" (click)="onTimerClick('3:30')" [ngClass]="{'highlighted': isBetweenTime('3:30')}">3:30</div>
+      <div class="grid-item box timer" (click)="onTimerClick('3:20')" [ngClass]="{'highlighted': isBetweenTime('3:20')}">3:20</div>
+      <div class="grid-item box timer" (click)="onTimerClick('3:10')" [ngClass]="{'highlighted': isBetweenTime('3:10')}">3:10</div>
+      <div class="grid-item box timer" (click)="onTimerClick('3:00')" [ngClass]="{'highlighted': isBetweenTime('3:00')}">3:00</div>
 
+    </div>
+    <div class="empty grid-container" id="2">
+      <div class="grid-item box timer" (click)="onTimerClick('2:50')" [ngClass]="{'highlighted': isBetweenTime('2:50')}">2:50</div>
+      <div class="grid-item box timer" (click)="onTimerClick('2:40')" [ngClass]="{'highlighted': isBetweenTime('2:40')}">2:40</div>
+      <div class="grid-item box timer" (click)="onTimerClick('2:30')" [ngClass]="{'highlighted': isBetweenTime('2:30')}">2:30</div>
+      <div class="grid-item box timer" (click)="onTimerClick('2:20')" [ngClass]="{'highlighted': isBetweenTime('2:20')}">2:20</div>
+      <div class="grid-item box timer" (click)="onTimerClick('2:10')" [ngClass]="{'highlighted': isBetweenTime('2:10')}">2:10</div>
+      <div class="grid-item box timer" (click)="onTimerClick('2:00')" [ngClass]="{'highlighted': isBetweenTime('2:00')}">2:00</div>
+    </div>
+
+    <div class="empty grid-container" id="1">
+      <div class="grid-item box timer" (click)="onTimerClick('1:50')" [ngClass]="{'highlighted': isBetweenTime('1:50')}">1:50</div>
+      <div class="grid-item box timer" (click)="onTimerClick('1:40')" [ngClass]="{'highlighted': isBetweenTime('1:40')}">1:40</div>
+      <div class="grid-item box timer" (click)="onTimerClick('1:30')" [ngClass]="{'highlighted': isBetweenTime('1:30')}">1:30</div>
+      <div class="grid-item box timer" (click)="onTimerClick('1:20')" [ngClass]="{'highlighted': isBetweenTime('1:20')}">1:20</div>
+      <div class="grid-item box timer" (click)="onTimerClick('1:10')" [ngClass]="{'highlighted': isBetweenTime('1:10')}">1:10</div>
+      <div class="grid-item box timer" (click)="onTimerClick('1:00')" [ngClass]="{'highlighted': isBetweenTime('1:00')}">1:00</div>
+    </div>
   </div>
-  <div class="empty box grid-container" id="2">
-    <div class="grid-item timer" (click)="onTimerClick('2:50')" [ngClass]="{'highlighted': isBetweenTime('2:50')}">2:50</div>
-    <div class="grid-item timer" (click)="onTimerClick('2:40')" [ngClass]="{'highlighted': isBetweenTime('2:40')}">2:40</div>
-    <div class="grid-item timer" (click)="onTimerClick('2:30')" [ngClass]="{'highlighted': isBetweenTime('2:30')}">2:30</div>
-    <div class="grid-item timer" (click)="onTimerClick('2:20')" [ngClass]="{'highlighted': isBetweenTime('2:20')}">2:20</div>
-    <div class="grid-item timer" (click)="onTimerClick('2:10')" [ngClass]="{'highlighted': isBetweenTime('2:10')}">2:10</div>
-    <div class="grid-item timer" (click)="onTimerClick('2:00')" [ngClass]="{'highlighted': isBetweenTime('2:00')}">2:00</div>
   </div>
 
-  <div class="empty box grid-container" id="1">
-    <div class="grid-item timer" (click)="onTimerClick('1:50')" [ngClass]="{'highlighted': isBetweenTime('1:50')}">1:50</div>
-    <div class="grid-item timer" (click)="onTimerClick('1:40')" [ngClass]="{'highlighted': isBetweenTime('1:40')}">1:40</div>
-    <div class="grid-item timer" (click)="onTimerClick('1:30')" [ngClass]="{'highlighted': isBetweenTime('1:30')}">1:30</div>
-    <div class="grid-item timer" (click)="onTimerClick('1:20')" [ngClass]="{'highlighted': isBetweenTime('1:20')}">1:20</div>
-    <div class="grid-item timer" (click)="onTimerClick('1:10')" [ngClass]="{'highlighted': isBetweenTime('1:10')}">1:10</div>
-    <div class="grid-item timer" (click)="onTimerClick('1:00')" [ngClass]="{'highlighted': isBetweenTime('1:00')}">1:00</div>
-  </div>
-</div>
-
-<div class="workspace">
-  <div>   林彥亨 </div>
- <div class="container">
-  <app-major [starttime]="startTime" [endtime]="endTime"></app-major></div>
+  <div class="workspace">
+    <div>   林彥亨 </div>
+    <div class="container">
+      <app-major [starttime]="startTime" [endtime]="endTime"></app-major></div>
 </div>

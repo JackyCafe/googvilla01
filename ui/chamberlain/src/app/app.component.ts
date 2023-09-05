@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {SharedService} from "./shared.service";
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,12 @@ export class AppComponent {
   private clickedTimes: string[] = [];
   startTime: string | undefined; // 追蹤開始時間
   endTime: string | undefined; // 追蹤結束時間
+  data:any
+  startTimeRange: string = ''; // 起始时间
+  endTimeRange: string = '';   // 结束时间
+
+  constructor(private service:SharedService) {
+  }
 
   /*start time  */
   onTimerClick(time: string) {
@@ -56,5 +63,53 @@ export class AppComponent {
       }
     }
     return null;
+  }
+
+  getWorkRecord(){
+    const now = new Date()
+    const year:number = now.getFullYear()
+    const month:number = now.getMonth()+1;
+    const day:number = now.getDate();
+    const date:string =this.convertDateFormat(year,month,day)
+    // 设置时间区间
+
+    this.service.getWorkRecord(null,date).subscribe(
+      data=>{
+        this.data = data;
+        this.startTimeRange = this.data.startTime;
+        this.endTimeRange = this.data.endTime;
+        this.highlightDivsInRange();
+
+      }
+    )
+  }
+  highlightDivsInRange() {
+    // 这里您可以遍历数据，根据 startTimeRange 和 endTimeRange 设置 div 的颜色
+    // 例如，将数据中的时间字段与时间区间进行比较，并设置相应的 CSS 类来改变颜色
+    // 这里只是一个示例，具体实现根据您的数据结构和需求进行调整
+    this.data.forEach((record: any) => {
+      const recordTime = `${record.working_date} ${record.start_time}`;
+      if (recordTime >= this.startTimeRange && recordTime <= this.endTimeRange) {
+        // 在此设置 CSS 类以改变 div 的颜色
+        // 例如：record.highlighted = true;
+      }
+    });
+  }
+
+  convertDateFormat(year: number,month:number,day:number): string {
+    let smonth = "";
+    let sday: string="";
+    if (month<10)  {
+      smonth = '0'+month.toString();
+    }else{
+      smonth = month.toString();
+    }
+    if (day<10)  {
+      sday = '0'+day.toString();
+    }else{
+      sday = day.toString();
+    }
+    return `${year}-${smonth}-${sday}`;
+
   }
 }
