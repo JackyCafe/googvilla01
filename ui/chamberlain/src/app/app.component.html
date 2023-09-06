@@ -220,9 +220,24 @@
     </div>
   </div>
   </div>
+  <div class="info">
+    <ul>
+    <div class="m-6 btn btn-light btn-outline-primary">   林彥亨 </div></ul>
+      <ul class="navbar-nav" *ngFor="let item of summary_data">
+        <div class="m-1 btn btn-light btn-outline-primary">
+          {{item.item}}
+          工時 {{item.daily_spend}}
+          收益 {{item.daily_bonus}}
+          能量指標 {{item.daily_moods}}
+        </div>
+      </ul>
+
+  </div>
 
   <div class="workspace">
     <div>   林彥亨 </div>
     <div class="container">
+
+
       <app-major [starttime]="startTime" [endtime]="endTime"></app-major></div>
 </div>

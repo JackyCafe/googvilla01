@@ -8,8 +8,12 @@ from django.shortcuts import render, get_object_or_404, get_list_or_404, redirec
 # Create your views here.
 import logging
 
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+
 from app.forms import WorkRecordForm
 from app.models import MajorItem, SubItem, DetailItem, WorkRecord
+from app.serializers import WorkRecordSerializer
 
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s %(levelname)s %(message)s ',
@@ -56,3 +60,6 @@ def create_work_record(request,id):
        # form = WorkRecordForm()
         form = WorkRecordForm(initial=intaial_data)
     return render(request, 'app/create_work_record_views.html', {'form': form})
+
+
+

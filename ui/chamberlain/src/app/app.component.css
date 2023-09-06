@@ -114,7 +114,15 @@ ul#mood li{
   border-radius: 20px;
 }
 .info{
-
+  font-size: 24px;
+  font-family: Helvetica;
+  background: #ffbaba;
+  position: absolute;
+  top:150px;
+  left: 150px;
+  height: 580px;
+  width: 580px;
+  border-radius: 20px;
 }
 
 .grid-container-horizontal {

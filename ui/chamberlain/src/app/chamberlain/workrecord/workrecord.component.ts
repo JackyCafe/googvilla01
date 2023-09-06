@@ -64,7 +64,7 @@ export class WorkrecordComponent implements  OnInit{
     this.service.addWorkRecord(val,this.detailId).subscribe(
     {
       next:data=>{this.data=data;
-      alert('新增完成'+this.data);
+      alert('新增完成');
       console.log('data',this.data);
       },
       error:error=>{

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import {SharedService} from "./shared.service";
 
 @Component({
@@ -6,17 +6,23 @@ import {SharedService} from "./shared.service";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'chamberlain';
   private clickedTimes: string[] = [];
   startTime: string | undefined; // 追蹤開始時間
   endTime: string | undefined; // 追蹤結束時間
   data:any
+  summary_data:any
   startTimeRange: string = ''; // 起始时间
   endTimeRange: string = '';   // 结束时间
 
   constructor(private service:SharedService) {
   }
+
+  ngOnInit(): void {
+    this.getSummaryReport();
+        throw new Error('Method not implemented.');
+    }
 
   /*start time  */
   onTimerClick(time: string) {
@@ -111,5 +117,20 @@ export class AppComponent {
     }
     return `${year}-${smonth}-${sday}`;
 
+  }
+
+  //每日摘要
+  getSummaryReport(){
+    const now = new Date()
+    const year:number = now.getFullYear()
+    const month:number = now.getMonth()+1;
+    const day:number = now.getDate();
+    const date:string =this.convertDateFormat(year,month,day)
+    this.service.getSummary(date).subscribe(
+      data=>{
+        this.summary_data = data;
+
+      }
+    )
   }
 }

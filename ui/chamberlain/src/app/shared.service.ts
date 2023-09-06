@@ -41,6 +41,11 @@ export class SharedService {
     else
       return this.http.get(this.APIUrl+'/workrecord/'+date);
   }
+
+  getSummary(date:any){
+    return this.http.get(this.APIUrl+'/summary/'+date);
+
+  }
   sendCloseClickSignal() {
     this.closeClickSource.next(true);
   }
