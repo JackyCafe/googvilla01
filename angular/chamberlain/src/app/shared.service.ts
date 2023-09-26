@@ -6,8 +6,8 @@ import {BehaviorSubject} from "rxjs";
   providedIn: 'root'
 })
 export class SharedService {
-  // readonly APIUrl = "http://120.110.115.80:8000/app/api";
-  APIUrl = "http://localhost:8000/app/api";
+  readonly APIUrl = "http://120.110.115.80/app/api";
+  // APIUrl = "http://localhost/app/api";
   private closeClickSource = new BehaviorSubject<boolean>(false);
   closeClick$ = this.closeClickSource.asObservable();
 

@@ -1,0 +1,8 @@
+2023-09-27 00:07 WARNING Not Found: /favicon.ico 
+2023-09-27 00:12 INFO /code/googvilla01/settings.py changed, reloading. 
+2023-09-27 02:31 INFO [] 
+2023-09-27 02:31 WARNING Not Found: /favicon.ico 
+2023-09-27 02:34 INFO [] 
+2023-09-27 02:36 WARNING Not Found: /favicon.ico 
+2023-09-27 02:36 WARNING Forbidden (CSRF token from POST incorrect.): /admin/login/ 
+2023-09-27 02:36 WARNING Not Found: /admin/l 
